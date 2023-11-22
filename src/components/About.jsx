@@ -1,0 +1,27 @@
+import React from 'react'
+
+const About = () => {
+  return (
+    <div 
+    name="about" 
+    className='w-full h-screen bg-gradient-to-b from-gray-800 to-black
+     text-white'>
+      <div className='mx-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full'>
+        <div className='pb-8'>
+            <p className='text-4xl font-bold inline borderd-b-4 border-gray-500'>About</p>
+        </div>
+        <p className='text-xl mt-20'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio,
+             fuga doloremque porro ducimus sint incidunt sequi quos,
+             inventore corporis distinctio architecto  cumque, 
+             esse voluptates quas est ut provident eum nostrum.
+        </p>
+        <br />
+        <p  className='text-xl'>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+             Quidem sit culpa a nobis corporis deleniti inventore corrupti vero amet aspernatur mollitia quisquam laborum,
+             at quasi unde suscipit doloribus minus velit!</p>
+      </div>
+    </div>
+  )
+}
+
+export default About
