@@ -56,18 +56,18 @@ const SocialLinks = () => {
   return (
     <div className=" hidden lg:flex flex-col top-[35%] left-0 fixed">
         <ul>
-            {sets.map(({id,child,style,href,download})=>(
+            {sets.map((value,index)=>(
             <li 
-            key={id} 
-             className={'flex justify-between items-center w-40 h-14 px-4 ml-[-100px] hover:ml-[-10px]  duration-300 hover:rounded-md bg-gray-500' + " " + style}> 
+            key={index} 
+             className={'flex justify-between items-center w-40 h-14 px-4 ml-[-100px] hover:ml-[-10px]  duration-300 hover:rounded-md bg-gray-500' + " " + value.style}> 
                 <a
-                 href={href}
+                 href={value.href}
                  className='flex justify-between items-center w-full text-white'
-                 download={download}
+                 download={value.download}
                  target='_blank'
                  rel="noreferrer"
             >
-              {child}
+              {value.child}
                 </a>
             </li>
             ))}

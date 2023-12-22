@@ -1,38 +1,48 @@
 import React from 'react'
-import arrayDestruct from '../assets/Portfolio/arrayDestruct.jpg';
-import installNode from '../assets/Portfolio/installNode.jpg';
-import navbar from '../assets/Portfolio/navbar.jpg';
-import reactSmooth from '../assets/Portfolio/reactSmooth.jpg';
+import Foodish from '../assets/Portfolio/Foodish.png';
+import Millionaire from '../assets/Portfolio/Millionaire.jpg';
+import drumKit from '../assets/Portfolio/drumKit.png';
+import todolist from '../assets/Portfolio/todolist.png';
 import reactParallax from '../assets/portfolio/reactParallax.jpg';
 import reactWeather from '../assets/Portfolio/reactWeather.jpg';
+import Netflix from '../assets/portfolio/Netflix.png';
+import currencyConvertor2 from '../assets/portfolio/currencyConvertor2.png';
 
 const Portfolio = () => {
 
     const portfolios = [
         {
             id:1,
-            src:arrayDestruct
+            logo:Millionaire,
+            link:'https://millionaire-app-mu.vercel.app/'
         },
         {
             id:2,
-            src:reactParallax
+            
+            logo:Netflix,
+            link:'https://netflix-two-amber.vercel.app/'
         },
         {
             id:3,
-            src:navbar
+            logo:Foodish,
+            link:'https://foodish.vercel.app/'
         },
         {
             id:4,
-            src:reactSmooth
+            logo:drumKit,
+            link:'https://drum-kit-swart-nine.vercel.app/'
         },
         {
-            id:1,
-            src:installNode
+            id:5,
+            logo:todolist,
+            link:'https://todolist-theta-black.vercel.app/'
         },
         {
-            id:1,
-            src:reactWeather
+            id:6,
+            logo:currencyConvertor2,
+            link:'https://currency-convertor-rho-two.vercel.app/'
         },
+        
     ]
   return (
    <div name="portfolio" className='bg-gradient-to-b from-black to-gray-800 w-full
@@ -48,17 +58,24 @@ const Portfolio = () => {
         </div>
 
         
-        <div className='grid ms:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0'>
-            {portfolios.map(({id,src}) => (
+        <div className='grid ms:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0 '>
+            {portfolios.map(({id,logo,link}) => (
                 <div key={id} className='shadow-md shadow-gray-600 rounded-lg'>
-                <img src={src} alt="pic" 
+                <img src={logo} alt="pic"
+                
                 className="rounded-md duration-200 hover:scale-105"
                 />
+                {/* <a href={link}>Visit website</a> */}
                 <div className='flex items-center justify-center'>
-                    <button className='w-1/2 px-6 py-3 m-4 duration-200
-                    hover:scale-105'>Demo</button>
-                    <button className='w-1/2 px-6 py-3 m-4 duration-200
-                    hover:scale-105'>code</button>
+                    
+                    <a href={link}>
+                    <button className=' bg-gray-600 w-100% rounded-xl mb-5px background-color-blue px-6 py-3 m-4 duration-200 
+                    hover:scale-105'>Visit site </button>
+                    </a>
+
+                    {/* <button className='w-1/2 px-6 py-3 m-4 duration-200
+                     hover:scale-105'>code</button> */}
+                   
                 </div>
             </div>
             ))}

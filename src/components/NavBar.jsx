@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { FaBars, FaTimes} from "react-icons/fa";
 import {Link} from "react-scroll";
+import logo from "../assets/portfolio/logo.gif"
 
 const NavBar = () => {
 
@@ -32,8 +33,11 @@ const NavBar = () => {
     <>
     <div className='flex justify-between items-center
      w-full h-20 px-4 text-white bg-black fixed'>
-        <div>
-            <h1 className='text-5xl font-signature ml-2'>Kumar</h1>
+        <div className='text-5xl font-signature ml-2'>
+            {/* <h1 className='text-5xl font-signature ml-2'>Kumar</h1> */}
+            <div className=' max-w-full rounded-xl'>
+            <img className=' h-25 w-20 rounded-full delay-150' src={logo} alt="logo" />
+            </div>
         </div>
 
         <ul className='hidden md:flex'>

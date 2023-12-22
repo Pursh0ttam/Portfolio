@@ -10,15 +10,16 @@ const About = () => {
         <div className='pb-8'>
             <p className='text-4xl font-bold inline borderd-b-4 border-gray-500'>About</p>
         </div>
-        <p className='text-xl mt-20'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio,
-             fuga doloremque porro ducimus sint incidunt sequi quos,
-             inventore corporis distinctio architecto  cumque, 
-             esse voluptates quas est ut provident eum nostrum.
+        <p className='text-xl mt-20'>
+        Over the years, I've honed my skills in front-end development,
+         ensuring that websites I create are not only visually appealing but also functional and efficient. 
+         I have experience working on a wide range of projects, from simple personal websites to complex e-commerce platforms and web-based applications.
         </p>
         <br />
-        <p  className='text-xl'>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-             Quidem sit culpa a nobis corporis deleniti inventore corrupti vero amet aspernatur mollitia quisquam laborum,
-             at quasi unde suscipit doloribus minus velit!</p>
+        <p  className='text-xl'>I stay up-to-date with the latest web development trends and technologies
+         to deliver cutting-edge solutions that meet the needs of both clients and users. Problem-solving and attention to detail are at the core of my work,
+          and I'm dedicated to providing responsive, cross-browser compatible, and accessible websites.
+         In this ever-evolving field, I'm excited to continue learning and adapting to new challenges in web development.</p>
       </div>
     </div>
   )
